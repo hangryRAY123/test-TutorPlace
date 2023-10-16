@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>NFT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="NFT">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--no-js">
+        <div class="header__overlay"></div>
+        <div class="container">
+          <div class="header__wrapper"><img class="header__logo" src="img/svg/logo.svg" width="128" height="55" alt="NFT.">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Что даст обучение</a></li>
+              </ul>
+              <a class="btn btn--sign-in" href="#">Личный кабинет</a>
+            </nav>
+            <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="intro">
+          <div class="container">
+            <div class="intro__wrapper">
+              <h1 class="intro__title">Не упусти возможность войти в&nbsp;<b>прибыльную нишу</b></h1>
+              <picture>
+                <source type="image/webp" srcset="img/content/man.webp, img/content/man@2x.webp 2x"><img src="img/content/man.png" srcset="img/content/man@2x.png 2x" width="820" height="820" alt="Man.">
+              </picture>
+              <p class="intro__description">Получи все нужные навыки для заработка на&nbsp;NFT всего за&nbsp;28&nbsp;дней!</p>
+              <button class="btn btn--modal" type="button" data-open-modal="feedback">Начать зарабатывать на NFT</button>
+            </div>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="container">
+            <div class="advantages__wrapper">
+              <h2 class="advantages__title">Что даст тебе обучение?</h2>
+              <ul class="advantages__list">
+                <li class="advantages__item">
+                  <picture class="advantages__img">
+                    <source type="image/webp" srcset="img/content/smile-1.webp, img/content/smile-1@2x.webp 2x"><img src="img/content/smile-1.png" srcset="img/content/smile-1@2x.png 2x" width="117" height="117" alt="Smile.">
+                  </picture>
+                  <p class="advantages__description">Откроешь свой первый криптокошелек и&nbsp;научишься с&nbsp;ним работать</p>
+                </li>
+                <li class="advantages__item">
+                  <picture class="advantages__img">
+                    <source type="image/webp" srcset="img/content/smile-2.webp, img/content/smile-2@2x.webp 2x"><img src="img/content/smile-2.png" srcset="img/content/smile-2@2x.png 2x" width="117" height="117" alt="Smile.">
+                  </picture>
+                  <p class="advantages__description">Поймёшь, как выбирать правильные дропы</p>
+                </li>
+                <li class="advantages__item">
+                  <picture class="advantages__img">
+                    <source type="image/webp" srcset="img/content/smile-3.webp, img/content/smile-3@2x.webp 2x"><img src="img/content/smile-3.png" srcset="img/content/smile-3@2x.png 2x" width="117" height="117" alt="Smile.">
+                  </picture>
+                  <p class="advantages__description">Построишь план по&nbsp;быстрому приумножению заработанных средств</p>
+                </li>
+                <li class="advantages__item">
+                  <picture class="advantages__img">
+                    <source type="image/webp" srcset="img/content/smile-4.webp, img/content/smile-4@2x.webp 2x"><img src="img/content/smile-4.png" srcset="img/content/smile-4@2x.png 2x" width="117" height="117" alt="Smile.">
+                  </picture>
+                  <p class="advantages__description">Узнаешь кто такие холдеры и&nbsp;флипперы</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__copyright">© 2023 Copyright Text</div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal modal--preload modal--feedback" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__inner">
+            <h2 class="modal__title">Начни прямо сейчас!</h2>
+            <p class="modal__description">Получи все нужные навыки для заработка на&nbsp;NFT всего за&nbsp;28&nbsp;дней!</p>
+            <form class="modal__form" action="#">
+              <label class="modal__email"><span class="visually-hidden">Введите вашу почту</span>
+                <input type="email" name="user-mail" placeholder="Ваш email">
+              </label>
+              <button class="btn btn--modal" type="submit">Отправить</button>
+            </form>
+          </div>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="45" height="45" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
