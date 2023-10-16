@@ -1,0 +1,10 @@
+mixin header(headerMods, currentUrl)
+  header.header.header--no-js(class=headerMods)
+    .header__overlay
+    .container
+      .header__wrapper
+        img(src="img/svg/logo.svg", width="128", height="55", alt="NFT.").header__logo
+        +nav
+          +btn({text: "Личный кабинет", href: "#"}).btn--sign-in
+        button(type="button").header__toggle
+          span.visually-hidden Открыть меню.

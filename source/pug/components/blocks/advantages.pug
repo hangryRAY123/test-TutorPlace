@@ -1,0 +1,18 @@
+mixin advantages
+  -
+    const list = [
+      "Откроешь свой первый криптокошелек и&nbsp;научишься с&nbsp;ним работать",
+      "Поймёшь, как выбирать правильные дропы",
+      "Построишь план по&nbsp;быстрому приумножению заработанных средств",
+      "Узнаешь кто такие холдеры и&nbsp;флипперы"
+    ]
+
+  section.advantages
+    .container
+      .advantages__wrapper
+        h2.advantages__title Что даст тебе обучение?
+        ul.advantages__list
+          each item, i in list
+            li.advantages__item
+              +picture("content", `smile-${i+1}`, "png", 117, 117, "Smile.").advantages__img
+              p.advantages__description!=item

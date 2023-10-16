@@ -1,0 +1,104 @@
+.btn {
+  display: inline-flex;
+  padding: 10px 20px;
+  color: $color-default-white;
+  background-color: $color-neon-blue;
+  border: none;
+  cursor: pointer;
+  transition: $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &--sign-in {
+    padding: 16px 22px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid $color-default-white;
+    text-align: center;
+
+    &:hover {
+      color: $color-pear;
+      border: 1px solid $color-pear;
+    }
+
+    &:active {
+      background: rgba(224, 255, 172, 0.05);
+      backdrop-filter: blur(7.5px);
+    }
+  }
+
+  &--modal {
+    position: relative;
+    padding: 20px 30px;
+    font-family: "GTWalsheimPro", "Roboto", "Tahoma", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    color: $color-nero;
+    background: $malachite-to-pear;
+    border-radius: 20px;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    transition: $trans-default;
+    justify-content: center;
+
+    @include vp-767 {
+      width: 100%;
+      font-size: 16px;
+      border-radius: 15px;
+      padding: 15px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      filter: blur(8px);
+      background: $malachite-to-pear;
+      z-index: -1;
+      transition: $trans-default;
+    }
+
+    &:disabled {
+      color: rgba(36, 36, 36, 0.5);
+
+      &::before {
+        background: none;
+        filter: none;
+      }
+    }
+
+    &:hover {
+      &::before {
+        filter: blur(19.5px);
+      }
+    }
+
+    &:active {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+      &::before {
+        filter: blur(8px);
+      }
+    }
+  }
+}

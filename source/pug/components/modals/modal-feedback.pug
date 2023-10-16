@@ -1,0 +1,9 @@
+mixin modal-feedback()
+  .modal__inner
+    h2.modal__title Начни прямо сейчас!
+    p.modal__description Получи все нужные навыки для заработка на&nbsp;NFT всего за&nbsp;28&nbsp;дней!
+    form.modal__form(action="#")
+      label.modal__email
+        span.visually-hidden Введите вашу почту
+        input(type="email" name="user-mail" placeholder="Ваш email")
+      +btn({text: "Отправить"})(type="submit").btn--modal

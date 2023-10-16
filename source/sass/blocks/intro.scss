@@ -1,0 +1,119 @@
+.intro {
+  background-color: $color-bunker;
+  color: $color-default-white;
+  padding-top: 189px;
+  padding-bottom: 270px;
+  margin-top: -1px;
+
+  @include vp-1279 {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  @include vp-767 {
+    padding-top: 24px;
+    padding-bottom: 50px;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include vp-1279 {
+      align-items: center;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 87px;
+      height: 87px;
+      top: -52px;
+      left: 477px;
+      background: radial-gradient(
+        95.39% 95.39% at 50.77% 4.62%,
+        #ddf92c 0%,
+        #8fec36 44.51%,
+        #00d448 100%
+      );
+      border-radius: 50%;
+      filter: blur(2px);
+
+      @include vp-1279 {
+        display: none;
+      }
+    }
+
+    picture {
+      position: absolute;
+      top: -142px;
+      right: -108px;
+
+      @include vp-1279 {
+        position: static;
+      }
+
+      img {
+        max-width: 820px;
+        max-height: 820px;
+        user-select: none;
+        pointer-events: none;
+
+        @include vp-1279 {
+          margin: 0 auto;
+          width: 60%;
+        }
+
+        @include vp-767 {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__title {
+    max-width: 717px;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: -2.16px;
+    color: $color-default-white;
+
+    @include vp-1279 {
+      text-align: center;
+    }
+
+    @include vp-767 {
+      font-size: 25px;
+      font-style: normal;
+      letter-spacing: -0.75px;
+      margin-top: 22px;
+    }
+  }
+
+  &__description {
+    max-width: 499px;
+    margin-top: 35px;
+    margin-bottom: 73px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: $color-very-light-grey;
+
+    @include vp-1279 {
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      margin-top: 40px;
+      margin-bottom: 38px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+mixin nav
+  -
+    const links = [
+      {
+        href: "index.html",
+        text: "Главная"
+      },
+      {
+        href: "#",
+        text: "Что даст обучение"
+      }
+    ]
+
+  nav.nav
+    ul.nav__list
+      each item in links
+        li.nav__item
+          a(href=item.href).nav__link!=item.text
+    block
