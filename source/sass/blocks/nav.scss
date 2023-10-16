@@ -57,5 +57,18 @@
     font-weight: 400;
     line-height: 120%;
     color: $color-very-light-grey;
+    background: no-repeat 0 90%;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-size: 100% 1px;
+    }
+
+    &:active {
+      background-size: 0% 1px;
+      opacity: 0.7;
+    }
   }
 }
