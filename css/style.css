@@ -1966,6 +1966,21 @@ button,
   font-weight: 400;
   line-height: 120%;
   color: #cecece;
+  background: no-repeat 0 90%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.nav__link:hover {
+  background-size: 100% 1px;
+}
+
+.nav__link:active {
+  background-size: 0% 1px;
+  opacity: 0.7;
 }
 
 .intro {
