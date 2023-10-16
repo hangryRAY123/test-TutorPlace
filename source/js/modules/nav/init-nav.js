@@ -12,7 +12,6 @@ export const initNav = () => {
 
   const navClose = () => {
     headerToggle.classList.remove('is-active');
-    nav.classList.remove('nav--open');
     header.classList.remove('header--nav-open');
     focus.unlock();
     document.removeEventListener('keydown', onEscKeydown);
@@ -20,7 +19,6 @@ export const initNav = () => {
 
   const navOpen = () => {
     headerToggle.classList.add('is-active');
-    nav.classList.add('nav--open');
     header.classList.add('header--nav-open');
     focus.lock('.header', false);
     document.addEventListener('keydown', onEscKeydown);

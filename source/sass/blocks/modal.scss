@@ -83,7 +83,7 @@
 
     @include vp-767 {
       width: 100%;
-      padding: 20px;
+      padding: 45px 16px;
     }
   }
 
@@ -175,6 +175,8 @@
     @include vp-767 {
       width: 34px;
       height: 34px;
+      top: 12px;
+      right: 12px;
 
       svg {
         width: 34px;

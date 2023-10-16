@@ -19,10 +19,6 @@
     z-index: 2;
   }
 
-  &--open {
-    transform: translateX(0);
-  }
-
   &__list {
     display: flex;
     flex-wrap: wrap;

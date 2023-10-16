@@ -46,6 +46,10 @@
         z-index: 1;
       }
     }
+
+    .nav {
+      transform: translateX(0);
+    }
   }
 
   &__overlay {
