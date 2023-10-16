@@ -702,6 +702,11 @@ button,
   display: none;
 }
 
+.header--nav-open .nav {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
 .header__logo {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1934,11 +1939,6 @@ button,
   justify-content: space-between;
 }
 
-.nav--open {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
-
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2479,7 +2479,7 @@ button,
 
   .modal__content {
     width: 100%;
-    padding: 20px;
+    padding: 45px 16px;
   }
 
   .modal__inner {
@@ -2502,6 +2502,8 @@ button,
   .modal__close-btn {
     width: 34px;
     height: 34px;
+    top: 12px;
+    right: 12px;
   }
 
   .modal__close-btn svg {
